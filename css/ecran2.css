@@ -1,0 +1,521 @@
+@font-face {
+    font-family: 'metal_macabreregular';
+    src: url('../font/metalmacabre-webfont.woff2') format('woff2'),
+         url('../font/metalmacabre-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'captain_of_americaregular';
+    src: url('../font/font2/captainofamerica-personaluse-webfont.woff2') format('woff2'),
+         url('../font/font2/captainofamerica-personaluse-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*{
+    box-sizing: border-box;
+}
+
+body {
+    
+    background-image:url('../img/back.jpg');
+    background-size: cover;
+    
+}
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    width: 100%;
+    justify-content: space-around;
+    height: 15vh;
+    
+}
+header i{
+    color: white;
+    margin: 20px;
+    font-size: 2.7rem;
+    margin-top: 30px;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+   
+    width: 60%;
+    text-align: center;
+    
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+    font-family:metal_macabreregular;
+    font-size: 2rem;
+    margin-top: -10px;
+    margin-bottom: -46px;
+
+}
+.logo img{
+    width: 12rem;
+    height: 46%;
+    margin: auto;
+    
+
+}
+header .right {
+    margin-left: 5px;
+    margin-right: 10px;
+}
+main {
+    width: 100%;
+    height: calc(100vh - 15vh);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    
+}
+.nv{
+    width: 70%;
+    height: 55%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+
+    
+
+}
+.nouveaux{
+    color: white;
+    font-family: captain_of_americaregular;
+    font-size: 2rem;
+    margin: auto;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 80%;
+    background-color: black;
+    
+}
+
+
+.nv .box{
+    height: 20rem;
+    width: 20rem;
+    background-color: black;
+    position: relative;
+    top: 18px;
+    left: -25px;
+    margin: auto;
+    
+
+}
+.nv .box-2{
+    height: 80%;
+    width: 80%;
+    background-color: white;
+    position: relative;
+    top: 23px;
+    margin: auto;   
+}
+footer {
+    width: 100%;
+    height: 18%;
+    
+    position: absolute;
+    bottom: -19px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.com{
+    display: flex;
+    flex-direction: row;
+    
+    align-content: center;
+    text-align: center;
+    position: relative;
+    top: -15%;
+    left: 7%;
+    transform: translate(-20%,-20%);
+    margin: auto;
+  
+
+  
+}
+.com i {
+    color: white;
+    font-size: 2rem;
+  margin: 10px;
+    margin-top: 10px;
+    
+    
+}
+footer p{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 26px;
+    font-family: metal_macabreregular;
+    font-size: 2rem;
+
+}
+.selected{
+    background-color: black;
+}
+.bar-l{
+    visibility: hidden;
+width: 0px;
+
+}
+.bar-l a {
+    color: white;
+    text-decoration: none;
+    cursor:none;
+
+}
+#barll{
+    cursor: pointer;
+}
+.bar{
+    visibility: visible;
+}
+.side{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 0px;
+    background-color: blue;
+    z-index: 1;
+    padding-top: 100px;
+    overflow-x: hidden;
+    transition: all .5s;
+    text-align: center;
+}
+
+.side-active{
+    width: 300px;
+}
+.side a{
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    margin: 10px 0px 10px 0px;
+
+}
+.side .close{
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 32px;
+
+}
+
+.contact{
+    text-align: center;
+}
+.contact h1{
+    margin-top: 70px;
+}
+.contact form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+}
+.contact form input ,.mssg {
+    margin: 0px 0px 20px 0px;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 0px;
+    background-color: black;
+    color: white;
+}
+.mssg {
+    height: 10vh;
+    resize: none;
+}
+.gift{
+    text-align: center;
+    margin: auto;
+    color: white;
+}
+.loder{
+    position: absolute;
+    width: 95%;
+    height: 100%;
+    background-color: black;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    
+}
+.lettre{
+    color: white;
+    font-family: captain_of_americaregular;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    margin: 0%;
+    animation: flash 1.2s linear infinite; 
+}
+@keyframes flash {
+    0% {
+        color: #fff900;
+        text-shadow: 0 0 7px #fff900;
+    }
+    90% {
+        color: #484848;
+        text-shadow: none;
+    }
+    100% {
+        color: #fff900;
+        text-shadow: 0 0 7px #fff900;
+    }
+}
+
+.lettre:nth-child(1){
+    animation-delay: 0.1s;
+}
+.lettre:nth-child(2){
+    animation-delay: 0.2s;
+}
+.lettre:nth-child(3){
+    animation-delay: 0.3s;
+}
+.lettre:nth-child(4){
+    animation-delay: 0.4s;
+}
+.lettre:nth-child(5){
+    animation-delay: 0.5s;
+}
+.lettre:nth-child(6){
+    animation-delay: 0.6s;
+}
+.lettre:nth-child(7){
+    animation-delay: 0.7s;
+}
+
+.fondu-out {
+    opacity: 0;
+    transition: opacity 0.4s ease-out;
+    z-index: -2;
+
+}
+
+/*coming soon -------------------------------
+---------------------------------------
+#main-box{
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+    overflow: hidden;
+}
+.bar {
+    visibility: hidden;
+    
+    
+}
+.heure{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    color: yellow;
+    font-family: captain_of_americaregular;
+    
+    
+    
+}
+.heure h1 {
+    font-size: 3rem;
+}
+.heure h2{
+    font-family: metal_macabreregular;
+    color: black;
+}
+.heure p , .day , .hour , .second ,.minute {
+    font-size: 1.5rem;
+    
+}
+.day , .hour , .second ,.minute {
+    color: rgb(86, 255, 86);
+}
+
+.heure main{
+   margin-top: 50px;
+   width: 100%;
+
+    
+   
+}
+.heure main p{
+    text-align: center;
+
+    
+}
+*/
+
+  
+ 
+
+
+
+
+
+@media only screen and ( max-width: 2000px) and ( min-width: 800px) {
+    .nouveaux {
+        width: 35%; 
+    }
+    .nv .box {
+        height: 18rem;
+        width: 22rem;
+        left: 0px;
+    }
+    .com {
+        left: 2%;
+    }
+    footer{
+        bottom: -34px;
+    }
+    .bar{
+        visibility: hidden;
+        width: 0px;
+    }
+    .bar-l{
+        visibility: visible;
+        width: auto;
+        display: flex;
+        flex-wrap: nowrap;
+        margin-left: -15vh;
+    }
+    .bar-l a{
+        margin: 9px;
+    margin-top: 10px;
+    padding: 10px;
+    padding-left: 0px;
+    padding-right: 0px
+    }
+    .logo{
+        margin-left: -25vh;
+    }
+    .mssg {
+        height: 15vh;
+    }
+    .contact form {
+        width: 30%;
+    }
+
+}
+
+@media only screen and ( max-width: 790px) and ( min-width: 700px){
+  .nv .box{
+    height: 25rem;
+    width: 28rem;
+    left: 0px;
+  }
+}
+
+@media only screen and ( max-width: 550px){
+    .nv .box {
+        left: 0px;
+    }
+}
+
+@media only screen and ( max-width: 500px) {
+    header{
+        width: 99%;
+    }
+    .nv .box{
+        height: 16rem;
+        width: 18rem;
+        background-color: black;
+        position: relative;
+        top: 18px;
+        left: -10px;
+        margin: auto;
+        
+    
+    }
+    footer p{
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        margin-top: 26px;
+        font-family: metal_macabreregular;
+        font-size: 1rem;
+    
+    }
+    
+}
+
+@media only screen and ( max-width: 400px){
+    header{
+        width: 100%;
+    }
+    header i{
+        font-size: 1.7rem;
+    }
+    .nv .box {
+        left: -20px;
+    }
+    .nouveaux {
+        width: 90%;
+    }
+}
+
+@media only screen and ( max-width: 330px){
+ header{
+     width: 96%;
+     margin-left: 6px;
+ }
+ header i{
+     font-size: 1.7rem;
+ }
+ .nv .box{
+    left: -30px;     
+ } 
+}
+
+@media only screen and ( max-width: 300px){
+    .nv .box {
+        left: -10px;
+        height: 13rem;
+        width: 14rem;
+    }
+    .nouveaux {
+        font-size: 1.5rem;
+    }
+    header {
+        width: 81%;
+        margin-left: 27px;
+    }
+    .logo img {
+        width: 8rem;
+        height: 47%;
+        margin-left: 7px;
+    }
+
+}
